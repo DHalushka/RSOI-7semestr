@@ -1,0 +1,197 @@
+header {
+    margin: 0 auto;
+    width: 70%;
+    height: 200px;
+    background-image: url(/resource/Klassicheskaya-musika-dla-malishei4.webp);
+    background-position: right 35% bottom 55%;
+    background-size: 100% auto;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+.icon h1{
+    font-family:Brush Script MT;
+    font-style: italic;
+    font-size: 80px;
+    color: #c94b24;
+    filter: drop-shadow(2px 2px 10px #140706);
+}
+.icon h2{
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: 500;
+    color: #550607;
+    
+    filter: drop-shadow(2px 2px 10px #140706);
+}
+nav{
+    border: 5px solid #140706;
+    border-bottom: none;
+    width: 15%;
+    height: auto;
+    background-color: #550607;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav button,
+nav a{
+    border: none;
+    background: none;
+    height: fit-content;
+    color: #caa68c;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+nav button:hover,
+nav a:hover{
+    color: #c94b24;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: auto;
+    margin: 0 auto;
+
+}
+aside{
+    border: 5px solid #140706;
+    border-bottom: none;
+    width: 15%;
+    height: auto;
+    background-color: #550607;
+}
+article{
+    border-top: 5px solid #140706;
+    width: 70%;
+    height: 100%;
+    background-color: #caa68c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    border: 5px solid #140706;
+    border-radius: 30px/70px;
+    margin: 0 auto;
+    width: 85%;
+    height: 80px;
+    background-color: #550607;
+    color: #c94b24;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+html{
+    background-image: url(/resource/1611734036_22-p-fon-s-notami-dlya-prezentatsii-24.jpg);
+    background-attachment: fixed;
+    background-size: 100% auto;
+    font-family: Century Gothic;
+}
+body{
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+    background-color: #140706;
+}
+
+
+h1 {
+    margin-top: 0;
+}
+
+ul li{
+    margin: 2px 0;
+    padding: 0;
+    list-style: none;
+}
+
+form {
+    padding: 1em;
+}
+
+input,
+select{
+    padding: 3px;
+    box-sizing: border-box;
+    border: 1px solid #140706;
+    border-radius: 3px;
+}
+
+input:focus,
+select:focus{
+    border-width: 2px;
+}
+
+fieldset {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #140706;
+}
+fieldset legend{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration:underline;
+}
+fieldset h4{
+    margin: 20px 0 10px 0;
+    font-weight: 600;
+}
+.introduction legend{
+    text-align: left;
+    letter-spacing: normal;
+    font-size: 14px;
+    text-decoration:none;
+
+}
+
+form button {
+    margin: 20px 0 20px 124px;
+    padding: 10px;
+    border: #550607 1px solid;
+    border-radius: 3px;
+    height: fit-content;
+    width: 120px;
+    background-color:#c94b24;
+}
+form button:hover{
+    background-color:#550607;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 2em;
+    color: #c94b24;
+}
+
+label {
+    position: relative;
+}
+
+table,
+table tr,
+table td,
+table th{
+    border: 2px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+

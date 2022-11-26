@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Le Figaro</title>
+	<link href="/styles/null.css" rel="stylesheet" />
+	<link href="/styles/styles.css" rel="stylesheet" />
+	<link href="/styles/modal.css" rel="stylesheet" />
+</head>
+<body>
+	<header class="header">
+		<div class="icon">
+			<h1>Le Figaro</h1>
+			<h2>Школа классической музыки</h2>
+		</div>
+	</header>
+
+<div class="content">
+	<nav>
+		<a href="/html/index.html">Главная</a>
+		<button id="myBtn">Результаты</button>    
+	</nav>
+
+	<article>
+		<form method="post" id="registration-form" name="myForm">
+			<h2>Опрос посетителя <br> сайта классической музыки</h2>
+			<p>
+                Обязательные поля отмечены
+                <strong><abbr title="required">*</abbr></strong>
+			</p>
+			<section>
+                <fieldset class="introduction">
+                    <legend>
+                        <strong><abbr title="required">*</abbr></strong>
+                        Как Вас зовут?
+                    </legend>
+                    <p>
+                        <input type="text" id="name" name="name" pattern="[А-Я]{1}[а-я]{1,27}" maxlength="30" title="Имя (с прописной буквы)" required >
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Предпочтения</legend>          
+                    <h4>
+                        <strong><abbr title="required">*</abbr></strong>
+                        В каком месяце Вы в последний слушали классическую музыку?
+                    </h4>
+                    <p>
+                        <input type="month" id="month" name="month"  max="2022-11"required/>
+                    </p>       
+                    <h4>
+                        <strong><abbr title="required">*</abbr></strong>
+                        Что дает человеку, по Вашему мнению, общение с классической музыкой?
+                    </h4>
+                    <ul>
+                        <li>
+                            <input
+                            type="checkbox"
+                            id="culture"
+                            name="communication"
+                            value="Формирование музыкально-художественной культуры"
+                            />
+                            <label for="culture">Формирование музыкально-художественной культуры</label>
+                        </li>
+                        <li>
+                            <input
+                            type="checkbox"
+                            id="personality"
+                            name="communication"
+                            value="Формирование творческой личности"
+                            />
+                            <label for="personality">Формирование творческой личности</label>
+                        </li>
+                        <li>
+                            <input
+                            type="checkbox"
+                            id="aspiration"
+                            name="communication"
+                            value="Развитие стремление к поиску форм для воплощения своего замысла"
+                            />
+                            <label for="aspiration">Развитие стремление к поиску форм для воплощения своего замысла</label>
+                        </li>
+                        <li>
+                            <input
+                            type="checkbox"
+                            id="hardtosay"
+                            name="communication"
+                            value="Затрудняюсь ответить"
+                            checked
+                            />
+                            <label for="hardtosay">Затрудняюсь ответить</label>
+                        </li>
+                    </ul>    
+                    <h4>
+                        <strong><abbr title="required">*</abbr></strong>
+                        Каких исполнителей Вы предпочитаете слушать?
+                    </h4>
+                    <select id="performer" name="performer"required>
+                        <option>Российских</option>
+                        <option>Иностранных</option>
+                        <option>Не имеет значения</option>
+                    </select>     
+                    <h4>
+                            <strong><abbr title="required">*</abbr></strong>
+                            Посещаете ли вы спектакли/концерты, где звучит классическая музыка?
+                    </h4>
+                    <ul>
+                        <li>
+                            <input type="radio" id="yes" name="visit" value="Да" required/>
+                            <label for="yes">Да</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="no" name="visit" value="Нет" />
+                            <label for="no">Нет</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="willing" name="visit" value="Желаю посетить в будущем"/>
+                            <label for="willing">Желаю посетить в будущем</label>
+                        </li>
+                    </ul>        
+                </fieldset>
+
+                <fieldset>
+                    <legend>Контактная информация</legend>
+                    <h4>
+                        <strong><abbr title="required">*</abbr></strong>
+                        Ваша дата рождения
+                    </h4>
+                    <p>
+                        <input type="date" id="date" name="date" min="1927-01-01" max="2020-12-31" required/>
+                        <label for="date"><em>в формате дд.мм.гггг</em></label>
+                    </p>
+                    <h4>
+                        <strong><abbr title="required">*</abbr></strong>
+                        Ваш e-mail для связи
+                    </h4>
+                    <p>
+                        <input type="email" id="email" name="email" required/>
+                    </p>
+                </fieldset>
+            </section>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</form>
+	</article>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="header">
+                <div class="icon">
+                    <h1>Le Figaro</h1>
+                    <h2>Школа классической музыки</h2>
+                </div>
+            </div>
+            <div class="content">
+                <div class="nav">
+                    <a class="close">Главная</a>
+                    <button>Результаты</button>
+                </div>
+                <div class="article">
+                    <div>
+                        <table id="registration-table">  
+                            <thead>
+                                <tr>
+                                    <th>Пользователь</th>
+                                    <th>Месяц</th>
+                                    <th>Общение</th>
+                                    <th>Исполнитель</th>
+                                    <th>Посещение</th>
+                                    <th>Дата</th>
+                                    <th>E-mail</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <h3>Имена зарегистрировавшихся пользователей</h3>
+                        <select>
+                            <optgroup 
+                            label="Имена зарегистрировавшихся пользователей"
+                            class="list-of-users">
+                            </optgroup>
+                        </select>
+                    </div>      
+                </div>
+                <div class="aside"></div>
+            </div>
+            <div class="footer">
+                <p>г. Минск, пр-кт Машерова, 55</p>
+                <br>
+                <p>2022 © "Le Figaro ltd" </p>
+                <p>223387 Минск</p>    
+            </div>   
+        </div>
+        <script src="/js/modal.js"></script> 
+    </div>
+
+	<aside></aside>
+</div>
+<script src="/js/validate.js"></script>
+<script src="/js/gettingelem.js"></script> 
+<footer class="footer">
+    <p>г. Минск, пр-кт Машерова, 55</p>
+    <br>
+    <p>2022 © "Le Figaro ltd" </p>
+    <p>223387 Минск</p>
+</footer>
+</body>
+</html>
