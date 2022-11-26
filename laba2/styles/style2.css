@@ -1,0 +1,88 @@
+body{
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px #777;
+    height: fit-content;
+}
+
+header{
+    height: 100.22px;
+    font-family: Arial, sans-serif;
+}
+h1 a{
+    position: absolute;
+    margin-left: 25;
+    top: 30;
+    z-index: 999;
+    color: #BA0C2F;
+    font-weight: 900;
+    font-size: 40;
+    line-height: 0;
+    text-decoration: none;
+}
+.rectangle{
+    width: 23.5%;
+    height: 100.22px;
+    background-color:#00205B;
+    border-radius: 10px 10px 0;
+}
+
+.rectangle::before{
+    content: '';
+    position: absolute;
+    left: 26.15%;
+    top: 9%;
+    width: 23.5%;
+    height: 40;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 0;
+}
+img{
+    position: relative;
+    top: -100px;
+    left: 25.75%;
+    width: 73.5%;
+    border: 5px solid #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 2px -2px 5px #777;
+}
+
+
+.block1{
+    margin-top: -10;
+    border-radius: 0 10px 0 0;
+}
+.block2{
+    border-radius: 0 0 10px 10px;
+}
+.block1, 
+.block2{
+    padding: 25px;
+    font-size: 20;
+}
+.block1,
+.block2,
+.rectangle{
+    background: radial-gradient( #fff, #777);
+    background-attachment: fixed;
+}
+
+
+
+table{
+	border-spacing: 5px;
+    font-size: 18;
+}
+table td, 
+table tr{
+    padding: 5px 10px;
+    color: #fff;
+}
+table tr:first-child{
+    font-weight: 900;
+}
+table tr:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,112 @@
+body{
+    margin: 0 auto;
+    padding: 25px;
+    width: 90%;
+    background-color: #00205B;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: #fff;
+}
+h1 a{
+    position: fixed;
+    margin-left: 50;
+    top: 35;
+    z-index: 999;
+    color: #BA0C2F;
+    background-color: #00205B;
+    font-weight: 900;
+    font-size: 40;
+    text-decoration: none;
+}
+h1 a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+.rectangle{
+    margin-left: -30px;
+    width: 300px;
+    height: 100px;
+    background-color:#00205B;
+    transform: skewX(-20deg);
+    position: fixed;
+}
+
+
+
+
+.block1, 
+.block2{
+    padding: 25px;
+    border-left: solid 10px white;
+    border-right: solid 10px white;
+
+}
+.block1,
+.block2,
+header{
+    background: linear-gradient( #fff, #777);
+    background-attachment: fixed;
+}
+.block1{
+    padding-top: 150px;
+    border-top: solid 10px white;
+}
+.block2{
+    border-bottom: solid 10px white;
+}
+
+
+
+
+.block1 p{
+    font-size: 20px;
+}
+.block1 p::first-letter{
+    color: #BA0C2F;
+    font-weight: 900;
+    font-size: 22;
+}
+.block1 p:after,
+.block1 h3:after{
+    content:url(/resource/Flag_of_Norway.svg.png);
+}
+.paragraph{
+    margin: 0.25em 0;
+}
+.block1 h3{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22;
+    margin-top: -5px;
+}
+
+
+
+
+
+.block2{
+    height: 35%;
+    border-radius: 0 0 35px 35px;
+}
+.block2 svg{
+    margin-right: -10px;
+}
+#blink {
+    animation: blink 3s linear infinite;
+}
+@keyframes blink {
+    0% { color: #00205B }
+    50% { color: #fff }
+    100% { color: #BA0C2F }
+}
+h6{
+    position: relative;
+    top: -210;
+    left: 70;
+    font-size: 46;
+    letter-spacing: 25;
+}
