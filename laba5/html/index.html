@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page</title>
+	<!--<link href="/styles/null.css" rel="stylesheet" />-->
+	<link href="/styles/styles.css" rel="stylesheet" />
+</head>
+<body id="body">
+    <div class="app">
+        <label for="userid">Id ученика</label>
+        <select name="userid" id="userid">
+            <option value="1">1</option>
+        </select>
+        <input type="text" name="username" placeholder="ФИО">        
+        <input type="text" name="adress" placeholder="Адрес">
+
+        <label for="classnumber">Номер класса</label>
+        <input type="number" name="classnumber" max="4" min="1">
+
+        <label for="olympics">Учавствует ли в олимпиадах</label>
+        <div class="olympics">
+            <input type="radio" name="olympics">Да
+            <input type="radio" name="olympics">Нет    
+        </div>
+
+        <button id="add">Ввести данные в таблицу</button>
+        <!--<button>Удалить запись по ID</button>
+        <button>Показать все записи</button>-->
+    </div>
+    <div class="caption-table">
+        <div>ФИО</div>
+        <div>Адрес</div>
+        <div>Номер класса</div>
+        <div>Олимпиады</div>
+    </div>
+    <div class="table-block">
+        <div class="table">
+
+        </div>
+    </div>
+    <button id="btnClear">Очистить форму</button>
+    <script src="/js/somefile.js"></script>
+    <script src="/js/database.js"></script>
+</body>
+</html>
