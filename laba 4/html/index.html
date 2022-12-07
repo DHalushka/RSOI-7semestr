@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page</title>
+	<!--<link href="/styles/null.css" rel="stylesheet" />-->
+	<link href="/styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+	
+		<form method="post" id="myForm" name="myForm">
+            <p class="text"><input class="txt" type="text" id="text" placeholder="Введите текст"></p>
+            <section>
+                <p><select size="3"  name="color[]">
+                    <option disabled>Выберите цвет</option>
+                    <option class="color" value="blue">Синий</option>
+                    <option class="color" selected value="green">Зеленый</option>
+                    <option class="color" value="purple">Фиолетовый</option>
+                </select></p>
+                <p><select size="3"  name="size[]">
+                    <option disabled>Выберите размер</option>
+                    <option value="12px">12</option>
+                    <option selected value="16px">16</option>
+                    <option value="22px">22</option>
+                </select></p>
+                </section>
+            <section>
+                <p><input type="radio" name="radioBtn" value="after" checked> After</p>
+                <p><input type="radio" name="radioBtn" value="before"> Before</p>
+            </section>            
+            <textarea name="text" id="" cols="60" rows="10"></textarea>
+
+            <p class="buttons">
+                <button type="submit">Вставить текст</button>
+            </p>
+            
+            <script src="/js/textHandler.js"></script>
+
+		</form>
+        <p class="buttons">                
+            <button id="buttonAdd">Добавить</button>
+            <button id="buttonDelete">Удалить</button>
+        </p>
+        <script src="/js/inputHandler.js"></script>
+		
+
+</body>
+</html>
