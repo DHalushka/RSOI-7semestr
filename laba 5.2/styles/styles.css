@@ -1,0 +1,147 @@
+*::-webkit-scrollbar {
+    width: 0;
+}
+html{
+    background-image: url(/resource/[003933].jpg);
+    background-repeat: repeat;
+}
+body{
+    margin: 0 auto;
+    padding: 40px;
+    width: 50%;
+    min-height: 100vh;
+    background-color: #f0e7ea;
+    font-family: century gothic;
+}
+body .app{
+    display: flex;
+    flex-direction: column;
+
+}
+input,
+select{
+    border: 1px solid #000;
+    font-family: century gothic;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+input[type="radio"]{
+    width: fit-content;
+    margin-top: 5px;
+}
+input[type="number"],
+.select{
+    width: fit-content;
+}
+.olympics{
+    display: flex;
+    justify-content: flex-start;
+}
+.olympics input[type="radio"]{
+    margin-left: 40px;
+}
+button,
+input[type="button"]{
+    cursor: pointer;
+    font-family: century gothic;
+    font-size: 16px;
+    background-color: #969cc4;
+    border: solid 1px #565484;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0;
+}
+button:hover,
+input[type="button"]:hover{
+    background-color: #565484;
+}
+
+.full-table{
+    display: none;
+}
+table{
+    border-collapse: collapse;
+}
+table tr{
+    width: 100%;
+}
+table td{
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    border-bottom: #b39db0 1px solid;
+}
+
+.close{
+    width: fit-content;
+    padding: 5px;
+    background-color: #c79da3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: solid 1px #53434f;
+    position: relative;
+    left: 76%;
+}
+.close:hover{
+    background-color: #53434f;
+    color: #f0e7ea;
+}
+.caption-table{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    background: #b39db0;
+    font-weight: bold;
+    align-items: center;
+    justify-items: center;
+}
+
+.caption-table > {
+    padding: 10px;
+}
+.table-block{
+    height: fit-content;
+}
+
+.fio-back,
+.tel-back{
+    display: none;
+    min-height: 100%;
+    width: 100%;
+    background-color: rgba(240, 231, 234, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.fio-list,
+.tel-list{
+    min-height: 200px;
+    width: 46%;
+    background: #b39db0;
+    border: solid 1px #969cc4;
+    padding: 40px;
+    position: absolute;
+    top: 30%;
+    left: 24%;
+    font-size: 20px;
+}
+.fio-list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+.new-form{
+    display: none;
+    margin-top: 40px;
+}
+#showTel{
+    display: none;
+}

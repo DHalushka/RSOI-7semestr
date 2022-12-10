@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <form id="app" class="app">
+        <div class="add-block">
+            <div class="select">
+                <select id="id">
+                    <option value="select id">Выберите ID для удаления</option>
+                </select>
+            </div>
+            <div><input type="text" id="fio" placeholder="ФИО" required></div>
+            <div><input type="text" id="address" placeholder="Адрес" required></div>
+            <label for="olympics">Учавствует ли в олимпиадах?</label>
+            <div>
+                <input type="radio" name="olympics" value="true" required>
+                <label for="true">Да</label>
+                <input type="radio" name="olympics" value="false">
+                <label for="true">Нет</label>
+            </div>
+            <div><input type="number" id="classNumber" placeholder="№ класса" min="1" max="4" required></div>
+            <div>
+                <button id="add" type="submit">Ввести данные</button>
+                <button type="reset">Очистить форму</button>
+            </div>
+        </div>
+    </form>
+    <button id="btnShow" onclick="showTable">Показать таблицу</button>    
+    <button id="delBtn" >Удалить по ID</button>
+    <button id="showFio" onclick="showFio">Показать ФИО</button>
+    <button id="addTel" onclick="addTel">Добавить столбец</button>
+    <form class="new-form" id="new-form">
+        <div class="select">
+            <select id="addTelId">
+                <option value="select id">Выберите ID для добавления информации</option>
+            </select>
+            <div><input type="tel" id="telephone" placeholder="Номер телефона" required></div>
+        </div>
+        <button type="submit">Ввести данные</button>
+    </form>
+    <button id="showTel" onclick="showTel">Показать введенные данные</button>
+
+    <div id="full-table" class="full-table">
+        <div class="close">Закрыть таблицу &times;</div>
+        <div class="caption-table">
+            <div>ФИО</div>
+            <div>Адрес</div>
+            <div>Олимпиады</div>
+            <div>№ класса</div>
+        </div>
+        <div class="table-block">
+            <table id="table" class="table"></table>
+        </div>
+        <button id="btnClear">Очистить</button>
+    </div>
+    <div class="fio-back" id="fio-back">
+        <div class="fio-list" >   
+            <div class="close">Закрыть &times;</div>
+            <ul id="items">
+                <li>ФИО учеников, учавствующих в олимпиадах </li><br/>
+            </ul>
+        </div>
+    </div>
+    <div id="tel-back" class="tel-back">
+        <div class="tel-list">
+            <div class="close">Закрыть &times;</div>
+            <p>Добавленные номера телефонов</p>
+            <ol id="telephones">
+            </ol>
+        </div>
+    </div>
+    <script src="/js//studentsdb.js"></script>
+    <script src="/js/openings.js"></script>
+</body>
+</html>
